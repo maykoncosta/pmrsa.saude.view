@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   { path: 'pacientes', component: PacientesComponent }
@@ -28,7 +29,9 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatFormFieldModule, 
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    NgbAlertModule,
+    NgbPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
